@@ -6,13 +6,13 @@
 
 body {
     display: flex;
+    height: 100vh; /* Make sure the body takes the full viewport height */
 }
 
 .borders {
     height: 100vh;
     width: 17%;
     background-color: #1e1e1e;
-
 }
 
 .plant {
@@ -22,36 +22,87 @@ body {
 
 #information {
     font-family: Arial, Helvetica, sans-serif;
-    flex: 1;
+    flex: 1; /* Allow #information to take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
-/* Section for the signup form itself */
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    width: 100%;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 33%;
-    background-color: lightblue;
+    margin-bottom: 20px;
 }
 
 .main-form {
     width: 100%;
-    height: 34%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    width: 48%;
 }
 
-.account-creation {
-    background-color: lightblue;
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
     width: 100%;
-    height: 33%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+button:hover {
+    background-color: #45a049;
+}
 
+.login-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-prompt a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}

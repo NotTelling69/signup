@@ -8,10 +8,10 @@
 </head>
 
 <body>
-
-    <div class="borders">
-    </div>
-    <img src="../signup/singup_img.jpg" alt="plants" class="plant">
+    
+    <div class="borders"></div>
+    <img src="singup_img.jpg" alt="plants" class="plant">
+    
 
     <div id="information">
         <div class="container">
@@ -25,33 +25,51 @@
             </div>
             
             <div class="main-form">
+                <h2>Let's do this!</h2>
                 <form action="example.com/path" method="post">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
-                    <br>
-
-                    <label for="user_email">EMAIL</label>
-                    <input type="email" id="user_email" name="email">
-                    <label for="user_phone">PHONE NUMBER</label>
-                    <input type="tel" id="user_phone" name="user_phone">
-                    <br>
-
-                    <label for="user_password">PASSWORD</label>
-                    <input type="password" id="user_password" name="password">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" id="user_email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_phone">PHONE NUMBER</label>
+                            <input type="tel" id="user_phone" name="user_phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" id="user_password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Create Account</button>
+                    </div>
                 </form>
-
             </div>
 
-            <div class="account-creation">
-                <button>Create Account</button>
+            <div class="login-prompt">
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
 
         </div>
     </div>
 
-    <div class="borders">
-    </div>
+    <div class="borders"></div>
 </body>
 </html>
